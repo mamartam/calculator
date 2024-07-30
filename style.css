@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #17181A;
+}
+
+.calculator {
+    box-shadow: rgba(22, 25, 206, 0.05) 0px 6px 24px 0px, rgba(8, 30, 236, 0.08) 0px 0px 0px 1px;
+    background: linear-gradient(191.34deg, #17181A -4.95%, #17181A 103.74%);
+    border-radius: 39px;
+    width: 100%;
+    max-width: 375px;
+    /* min-height: 500px; */
+    max-height: 640px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+
+}
+
+.display {
+    min-height: 120px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: #FFFFFF;
+    flex: 1 1 0%;
+    /* =12,454 */
+
+}
+
+.display .input {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #818181;
+
+}
+
+.display .output {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 72px;
+    color: #FFFFFF;
+    margin-bottom: 0.5rem;
+
+
+
+
+}
+
+.display .operator {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #109DFF;
+}
+
+.keys {
+    padding: 1.5rem;
+    border-radius: 1.5rem 1.5 rem 0 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 1rem;
+
+}
+
+.keys .key {
+    position: relative;
+    cursor: pointer;
+    display: block;
+    height: 0;
+    padding-top: 100%;
+
+
+    background: #303136;
+    border-radius: 16px;
+    transition: 0.2s;
+    user-select: none;
+
+
+
+}
+
+.keys .key span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+
+    color: #29A8FF;
+
+}
+
+.keys .key:hover {
+    box-shadow: inset 0px 0px 8px egba(0, 0, 0, 0.2);
+}
+
+.keys .operator {
+
+    background: #005DB2;
+
+}
+
+.keys .action {
+
+    background: #616161;
+
+
+
+}
+
+.keys .action span {
+
+    color: #A5A5A5;
+
+}
